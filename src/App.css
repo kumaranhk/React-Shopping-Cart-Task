@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+.cart-btn{
+  width: 100px;
+}
+.cart-icon{
+  margin-right: 10px;
+}
+.header{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 18rem !important;
+}
+.col{
+  width: 100px !important;
+}
+.main{
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin-top: 50px;
+}
+.card-btn{
+  min-width: 150px;
+  max-width: 250px;
+  margin: auto auto 20px auto;
+}
+.sale-badge{
+  top: 0.5rem; 
+  right: 0.5rem
+}
