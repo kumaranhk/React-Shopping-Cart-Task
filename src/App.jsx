@@ -11,6 +11,7 @@ function App() {
     <NavBar count={count} />
     <Header />
     <Main count={count} setCount={setCount} />
+    <Fotter />
     </>
   )
 }
@@ -19,7 +20,7 @@ function App() {
 function NavBar({count}){
   return(
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand bg-info-subtle">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Start Bootstrap</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +47,12 @@ function NavBar({count}){
               </li>
             </ul>
               <button className="btn btn-primary cart-btn" type="button">
-                {/* cart icon */}
                 <span className='cart-icon'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                   </svg>
                 </span>
-                {`Cart ${count}`}
+                {`Cart (${count})`}
               </button>
           </div>
         </div>
@@ -146,12 +146,7 @@ function Main({count, setCount}){
       name : "Fancy Product",
       rating : "",
       price : "$280.00"
-    },
-    {
-      name : "Special Item",
-      rating : "⭐⭐⭐⭐⭐",
-      price : "$25.00"
-    }    
+    }
 ]
 
   return (
@@ -165,4 +160,14 @@ function Main({count, setCount}){
   )
 }
 
+//footter
+function Fotter(){
+  return(
+    <>
+      <div className="p-5 bg-dark footer">
+          <div className="container"><p class="m-0 text-center text-white">Copyright © Your Website 2024</p></div>
+      </div>
+    </>
+  )
+}
 export default App

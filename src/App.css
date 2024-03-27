@@ -1,17 +1,19 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
-}
+} */
 .cart-btn{
-  width: 100px;
+  min-width: 100px;
+  max-width: 200px;
+  margin-right: 20px;
 }
 .cart-icon{
   margin-right: 10px;
 }
 .header{
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -39,4 +41,12 @@
 .sale-badge{
   top: 0.5rem; 
   right: 0.5rem
+}
+nav{
+  position: fixed !important;
+  z-index: 1;
+  width: 100vw;
+}
+.footer{
+  margin-top: 50px;
 }
